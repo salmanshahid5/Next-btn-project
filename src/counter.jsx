@@ -15,7 +15,55 @@ function Counter() {
     }
   }
 
-  
+  // Styling
+  const container = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    backgroundColor: "#f0f0f0",
+  };
+
+  const main = {
+    width: "500px",
+    height: "400px",
+    backgroundColor: "#f0f0f0",
+    paddingTop: "25px",
+  };
+
+  const number = {
+    display: "flex",
+    justifyContent: "space-around",
+    width: "100%",
+  };
+
+  const Para = (isActive) => ({
+    backgroundColor: isActive ? "#6e00ff" : "#ccc",
+    color: "white",
+    width: "40px",
+    height: "40px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "50%",
+    fontSize: "18px",
+    fontWeight: "bold",
+  });
+
+  const btn = {
+    backgroundColor: "#6e00ff",
+    color: "white",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "20px",
+    cursor: "pointer",
+  };
+
+  const disabledBtn = {
+    ...btn,
+    backgroundColor: "#999",
+    cursor: "not-allowed",
+  };
 
   // Step titles
   const stepTitles = [
